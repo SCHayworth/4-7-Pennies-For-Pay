@@ -1,2 +1,2 @@
-# 0-0-CIS-2-Program-Template
- A template repository for CIS 2 Python projects
+# 4-7 Pennies For Pay
+Gets a number of days from the user, and doubles the number of pennies earned each day. Displays the total value of accumulated pennies in dollars.
