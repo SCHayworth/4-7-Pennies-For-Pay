@@ -36,10 +36,16 @@ Write a program that calculates the amount of money a person would earn over a p
     Print header
       Day	              Pennies
       -------------------------
-    FOR each day starting at 1
-      value = pennies / 100
+    IF number of days = 0
       print day and value
-      pennies = pennies * 2
-      total = total + value
-    Print total salary
-    END
+      print total
+      END
+    ELSE
+      pennies = 1
+      FOR each day starting at 1
+        value = pennies / 100
+        print day and value
+        pennies = pennies * 2
+        total = total + value
+      Print total
+      END
