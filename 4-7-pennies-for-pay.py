@@ -13,8 +13,6 @@ pennies = 0
 # Initialize value variable at 0.0
 value = 0.0
 
-
-
 # Initialize the total_salary accumulator at 0.0
 total_salary = 0.0
 
