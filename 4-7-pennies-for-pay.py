@@ -65,4 +65,4 @@ else:
         total_salary += value
 
     # Prints the total_salary and ends the program
-    print(f'The total salary for {days} is: ${total_salary:.2f}')
+    print(f'The total salary for {days} days is: ${total_salary:.2f}')
