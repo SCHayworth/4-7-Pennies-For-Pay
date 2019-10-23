@@ -36,7 +36,7 @@ print(header)
 if days == 0:
 
     # Prints the day and value of 0 pennies.
-    print(f'{days:<5}{display_value:>15}')
+    print(f'{days:<5}{display_value:>23}')
 
     # Prints the total salary of $0.0 and ends the program
     print(f'The total salary for {days} is: ${total_salary:.2f}')
@@ -52,7 +52,7 @@ else:
         value = pennies / 100
 
         # Prints the day and the value
-        print(f'{time:<5}{display_value:>15}')
+        print(f'{time:<5}{display_value:>23}')
 
         # Double the amount of pennies
         pennies *= 2
