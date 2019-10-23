@@ -37,7 +37,7 @@ print(header)
 if days == 0:
 
     # Prints the day and value of 0 pennies.
-    print(f'{days:<5}${value:>15.2f}')
+    print(f'{days:<5}{$value:>15.2f}')
 
     # Prints the total salary of $0.0 and ends the program
     print(f'The total salary for {days} is: ${total_salary:.2f}')
