@@ -13,8 +13,7 @@ pennies = 0
 # Initialize value variable at 0.0
 value = 0.0
 
-# Initialize display_value string to convert value float to properly formatted currency
-display_value = f'${value:.2f}'
+
 
 # Initialize the total_salary accumulator at 0.0
 total_salary = 0.0
@@ -34,6 +33,8 @@ print(header)
 
 # Check if the number of days is 0
 if days == 0:
+    # Initialize display_value string to convert value float to properly formatted currency
+    display_value = f'${value:.2f}'
 
     # Prints the day and value of 0 pennies.
     print(f'{days:<5}{display_value:>23}')
@@ -50,6 +51,9 @@ else:
 
         # Calculates the dollar value of the current number of pennies
         value = pennies / 100
+
+        # Initialize display_value string to convert value float to properly formatted currency
+        display_value = f'${value:.2f}'
 
         # Prints the day and the value
         print(f'{time:<5}{display_value:>23}')
