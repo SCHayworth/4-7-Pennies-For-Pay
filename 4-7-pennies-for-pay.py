@@ -7,15 +7,14 @@
 # Asks the user for a number of days, and calculates their salary over that time based on doubling the amount of pennies paid per day.
 # Displays the value of their salary in dollars each day, and a total amount over the provided span of days.
 
-# Initialize the DOLLAR_SIGN string constant.
-# This is so that later f-strings can be easily formatted without the need for awkward tabs in output statements.
-DOLLAR_SIGN = '$'
-
 # Initialize the pennies variable at 0
 pennies = 0
 
 # Initialize value variable at 0.0
 value = 0.0
+
+# Initialize display_value string to convert value float to properly formatted currency
+display_value = f'${value:.2f}'
 
 # Initialize the total_salary accumulator at 0.0
 total_salary = 0.0
@@ -37,7 +36,7 @@ print(header)
 if days == 0:
 
     # Prints the day and value of 0 pennies.
-    print(f'{days:<5}{$value:>15.2f}')
+    print(f'{days:<5}{display_value:>15}')
 
     # Prints the total salary of $0.0 and ends the program
     print(f'The total salary for {days} is: ${total_salary:.2f}')
@@ -53,7 +52,7 @@ else:
         value = pennies / 100
 
         # Prints the day and the value
-        print(f'{time:<5}${value:>15.2f}')
+        print(f'{time:<5}{display_value:>15}')
 
         # Double the amount of pennies
         pennies *= 2
